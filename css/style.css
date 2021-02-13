@@ -1,0 +1,48 @@
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.caja {
+    width: 25%;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    position: relative;
+}
+
+.caja > h2 {
+    background: brown;
+    color: white;
+    margin-top: 0;
+    width: 150px;
+    position: absolute;
+    right: 0;
+}
+
+.caja > p {
+    margin-top: 35px;
+}
+
+@media (min-width:768px) and (max-width: 991px){
+    .caja{
+        width: 42%;
+    }
+    .caja:last-child{
+        background: cornflowerblue;
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px){
+    .caja{
+        width: 90%;
+    }
+}
